@@ -20,15 +20,15 @@ Output: `2020-01-17-openshift-oauth-server-social-login-liberty-20001.html"
 
 .3. Locate file path or move the file to src folder
 
-.4. run `java <filename.html>`
-eg ` java 2020-01-17-openshift-oauth-server-social-login-liberty-20001.html`
+.4. run `java demoScript.java <filename.html>`
+eg ` java demoScript.java 2020-01-17-openshift-oauth-server-social-login-liberty-20001.html`
 
 Output: `rendered-<filename>`
 
 Done!
 
 This will have converted it ready for the Red Hat blog post, save the contents of the local copy and 
-paste the HTML into wordpress
+paste the HTML into wordpress.
 
 
 
