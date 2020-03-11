@@ -29,7 +29,7 @@ public class demoScript{
 		          BufferedWriter writer = new BufferedWriter(new FileWriter("rendered-"+renderedFile));
 		          for (lineNumber = 1; lineNumber < 447; lineNumber++) 
 		          {
-		            if (lineNumber == 454) 
+		            if (lineNumber == 452) 
 		            {
 		              text = readbuffer.readLine();
 		            } 
@@ -57,9 +57,11 @@ public class demoScript{
 						
 						//Language replacement - xml, gradle
 						text = text.replace("<pre class=\"highlight\"><code>FROM open-liberty</code></pre>", "[code lang=\"text\"]" + "\n" 
-						+ "FROM open-liberty" + "[/code]");
+						+ "FROM open-liberty" + "[/code]"); 
 						
 						
+						text = text.replace("<pre class=\"highlight\"><code>", "[code lang=\"html\"]" + "\n");
+						text = text.replace("<pre class=\"highlight\"><code class=\"language-java\" data-lang=\"java\"", "[code lang=" + "\"java\"]" + "\n");
 						text = text.replace("<pre class=\"highlight\"><code class=\"language-xml\" data-lang=\"xml\">", "[code lang=" + "\"xml\"]" + "\n");
 						text = text.replace("<pre class=\"highlight\"><code class=\"language-gradle\" data-lang=\"gradle\">", "[code lang=" + "\"gradle\"] \n");
 						text = text.replace("</code></pre>", "[/code]");
